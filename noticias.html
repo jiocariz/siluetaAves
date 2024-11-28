@@ -1,0 +1,141 @@
+<!-- 
+  LMSGI - Tarea Evaluativa 02 
+  Jose Ignacio Ocáriz Saenz de Viteri - 24/11/2024
+  Enlazamos noticias de Facebook, Instagram, Twitter, sobre la temática
+  El <article> de la noticia ha sido hecho con position relative y absolute
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web con noticias aprender sobre identificación de rapaces en vuelo">
+    <meta name="keywords" content="rapaces, birding, silueta, prismáticos">
+    <title>Identificación de Rapaces en Vuelo</title>
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header principal -->
+    <header class="header">
+        <!-- Icono de la página -->
+        <img src="img/siluetas_transparentes.gif" alt="Logo rapaces en vuelo" class="header__icon">
+        <h1 class="header__title">Identificación de rapaces en vuelo</h1>
+    </header>
+
+    <!-- Breadcrumb de navegación -->
+    <nav class="nav nav--breadcrumb">
+        <ol class="nav__list">
+            <li class="nav__item"><a href="index.html">Inicio</a></li>
+            <li class="nav__item"><a href="#">> Noticias</a></li>
+        </ol>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main">
+        <!-- Aside con la barra lateral para poder ir a cualquier sección, podría haber usado otro nav-->
+        <aside class="main__aside">
+            <!-- Ir a Home -->
+            <article class="main__aside-item">
+                <a href="index.html" class="main__aside-link" title="Ir a Inicio">
+                    <img src="img/nav_home_transparente.gif" alt="Icono Home" class="main__aside-icon">
+                    <span class="main__aside-text">Home</span>
+                </a>
+            </article>
+            <!-- Ir a Noticias -->
+            <article class="main__aside-item">
+                <a href="noticias.html" class="main__aside-link" title="Ir a Noticias">
+                    <img src="img/nav_news_transparente.gif" alt="Icono Noticias" class="main__aside-icon">
+                    <span class="main__aside-text">Noticias</span>
+                </a>
+            </article>
+            <!-- Ir a la lista de aves -->
+            <article class="main__aside-item">
+                <a href="lista-aves.html" class="main__aside-link" title="Ir a Lista de Aves">
+                    <img src="img/nav_aves_transparente.gif" alt="Icono Lista Aves" class="main__aside-icon">
+                    <span class="main__aside-text">Lista Aves</span>
+                </a>
+            </article>
+            <!-- Ir al formulario de contacto -->
+            <article class="main__aside-item">
+                <a href="formulario.html" class="main__aside-link" title="Ir a Contacto">
+                    <img src="img/nav_contact_transparente.gif" alt="Icono Contacto" class="main__aside-icon">
+                    <span class="main__aside-text">Contacto</span>
+                </a>
+            </article>
+        </aside>
+
+        <!-- Sección principal con lista de noticias -->
+        <section class="main__content">
+            <h2>Noticias</h2>
+            <section class="news__list">
+                <!-- Noticia 1-->
+                <article class="news__item">
+                    <img src="img/logoFacebook.gif" alt="Facebook" class="news__icon">
+                    <p>¿Sabes qué pájaro es el de la foto?
+                        Aquí van las pistas:
+                        Es una de las especies de aves rapaces que puedes encontrar en el Vedado de Peñaflor.
+                        Esta rapaz, de coloración rojiza, cola ahorquillada y vuelo muy ágil, durante la invernada forma
+                        dormideros
+                        comunales en bosquetes o pequeños setos fluviales.
+                    </p>
+                    <img src="img/news/noticia01.jpg" alt="Foto noticia" target="_blank" class="news__img">
+                    <a href="https://www.facebook.com/BosqueZgz/posts/sabes-qu%C3%A9-p%C3%A1jaro-es-el-de-la-foto-aqu%C3%AD-van-las-pistas-es-una-de-las-especies-de-/340574558133092/"
+                        class="form__button">Seguir leyendo</a>
+                </article>
+                <!-- Noticia 2-->
+                <article class="news__item">
+                    <img src="img/logoTwitter.gif" alt="Twitter" class="news__icon">
+                    <p>En 2018 subimos al blog una lámina para diferenciar rapaces. Pero, en cielos grises marcas y
+                        colores pasan desapercibidos. Por eso, semanalmente, subiremos nuevas láminas para
+                        diferenciarlas por su silueta, sin colores ni marcas.
+                    </p>
+                    <img src="img/news/noticia02.jpg" alt="Foto noticia" target="_blank" class="news__img">
+                    <a href="https://x.com/bluenaturetours/status/1572488402368593921?t=13o6NKXv63hJKZ-ApnKGDQ&s=03"
+                        class="form__button">Seguir leyendo</a>
+                </article>
+                <!-- Noticia 3-->
+                <article class="news__item">
+                    <img src="img/logoInstagram.gif" alt="Instagram" class="news__icon">
+                    <p>Culebrera europea dándolo todo <span class="hashtag">#culebreraeuropea #circaetusgallicus
+                            #rapaces #birdsphotography</span>
+                    </p>
+                    <img src="img/news/noticia03.jpg" alt="Foto noticia" target="_blank" class="news__img">
+                    <a href="https://www.instagram.com/p/C8qvhPEK8Vp/?igsh=MTZpcnlyMnozbGZxeA=="
+                        class="form__button">Seguir leyendo</a>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>2024 - Identificación de rapaces en vuelo</p>
+        <!-- Licencia creative commons -->
+        <p xmlns:cc="http://creativecommons.org/ns#">
+            This work is licensed under 
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" 
+               target="_blank" 
+               rel="license noopener noreferrer" 
+               class="footer__link">
+               CC BY-NC 4.0
+               <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" 
+                    alt="CC logo" 
+                    class="footer__icon">
+               <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" 
+                    alt="BY logo" 
+                    class="footer__icon">
+               <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" 
+                    alt="NC logo" 
+                    class="footer__icon">
+            </a>
+        </p>
+        <!-- sección con enlaces a páginas desde donde se han descargado imágenes -->
+        <p>Images by <a href="https://www.vecteezy.com" target="_blank" class="footer__link">Vecteezy.com</a> y <a href="https://www.seo.org" target="_blank" class="footer__link">SEO</a> </p>
+    </footer>
+</body>
+
+</html>

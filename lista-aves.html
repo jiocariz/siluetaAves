@@ -1,0 +1,149 @@
+<!-- 
+  LMSGI - Tarea Evaluativa 02 
+  Jose Ignacio Ocáriz Saenz de Viteri - 24/11/2024
+  Página con la lista de aves cuyas fotos pueden consultarse
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web para aprender sobre identificación de rapaces en vuelo">
+    <meta name="keywords" content="rapaces, birding, silueta, prismáticos">
+    <title>Identificación de Rapaces en Vuelo</title>
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <!-- Header principal -->
+    <header class="header">
+            <!-- Icono de la página -->
+            <img src="img/siluetas_transparentes.gif" alt="Logo rapaces en vuelo" class="header__icon">
+        <h1 class="header__title">Identificación de rapaces en vuelo</h1>
+    </header>
+
+    <!-- Breadcrumb de navegación -->
+    <nav class="nav nav--breadcrumb">
+        <ol class="nav__list">
+            <li class="nav__item"><a href="index.html">Inicio</a></li>
+            <li class="nav__item"><a href="#">> Lista de aves</a></li>
+        </ol>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main">
+        <!-- Aside con la barra lateral para poder ir a cualquier sección, podría haber usado otro nav-->
+        <aside class="main__aside">
+            <!-- Ir a Home -->
+            <article class="main__aside-item">
+                <a href="index.html" class="main__aside-link" title="Ir a Inicio">
+                    <img src="img/nav_home_transparente.gif" alt="Icono Home" class="main__aside-icon">
+                    <span class="main__aside-text">Home</span>
+                </a>
+            </article>
+            <!-- Ir a Noticias -->
+            <article class="main__aside-item">
+                <a href="noticias.html" class="main__aside-link" title="Ir a Noticias">
+                    <img src="img/nav_news_transparente.gif" alt="Icono Noticias" class="main__aside-icon">
+                    <span class="main__aside-text">Noticias</span>
+                </a>
+            </article>
+            <!-- Ir a la lista de aves -->
+            <article class="main__aside-item">
+                <a href="lista-aves.html" class="main__aside-link" title="Ir a Lista de Aves">
+                    <img src="img/nav_aves_transparente.gif" alt="Icono Lista Aves" class="main__aside-icon">
+                    <span class="main__aside-text">Lista Aves</span>
+                </a>
+            </article>
+            <!-- Ir al formulario de contacto -->
+            <article class="main__aside-item">
+                <a href="formulario.html" class="main__aside-link" title="Ir a Contacto">
+                    <img src="img/nav_contact_transparente.gif" alt="Icono Contacto" class="main__aside-icon">
+                    <span class="main__aside-text">Contacto</span>
+                </a>
+            </article>
+        </aside>
+            
+        <!-- Sección principal con la lista de items de cada una de las especies -->
+        <!-- Todas llevan a la misma ficha, para que no haya confusiones al corregir -->
+        <section class="main__content">
+            <h2>Lista de Aves</h2>
+            <section class="bird-list">
+                <!-- Milano real -->
+                <a href="perdicera.html">
+                    <article class="bird-item">
+                        <img src="img/aves/milvusMilvus-cara.jpg" alt="Milano real" class="bird-item__cara">
+                        <section class="bird-item__desc">
+                            <h3 class="bird-item__title">Milano real</h3>
+                            <p class="bird-item__text">Invernante en la mayor parte de las regiones</p>
+                        </section>
+                        <img src="img/aves/milvusMilvus-silueta.jpg" alt="Silueta Milano real" class="bird-item__silueta">
+            
+                    </article>
+                </a>
+                <!-- Halcón peregrino -->
+                <a href="perdicera.html">
+                    <article class="bird-item">
+                        <img src="img/aves/falcoPeregrinus-cara.jpg" alt="Halcón peregrino" class="bird-item__cara">
+                        <section class="bird-item__desc">
+                            <h3 class="bird-item__title">Halcón Peregrino</h3>
+                            <p class="bird-item__text">Presente incluso en hábitats urbanos</p>
+                        </section>
+                        <img src="img/aves/falcoPeregrinus-silueta.jpg" alt="Silueta Halcón Peregrino"
+                            class="bird-item__silueta">
+                    </article>
+                </a>
+                <!-- Águila real -->
+                <a href="perdicera.html">
+                    <article class="bird-item">
+                        <img src="img/aves/aquilaCrisaetus-cara.jpg" alt="Águila real" class="bird-item__cara">
+                        <section class="bird-item__desc">
+                            <h3 class="bird-item__title">Águila real</h3>
+                            <p class="bird-item__text">La mayor de nuestras rapaces</p>
+                        </section>
+                        <img src="img/aves/aquilaChrysaetos-silueta.webp" alt="Silueta Águila real" class="bird-item__silueta">
+                    </article>
+                </a>
+                <!-- Águila perdicera -->
+                <a href="perdicera.html">
+                    <article class="bird-item">
+                        <img src="img/aves/aquilaFasciata-cara.jpg_large" alt="Águila perdicera" class="bird-item__cara">
+                        <section class="bird-item__desc">
+                            <h3 class="bird-item__title">Águila perdicera</h3>
+                            <p class="bird-item__text">En regresión en la mayor parte de sus poblaciones</p>
+                        </section>
+                        <img src="img/aves/aquilaFasciata-silueta.jpg" alt="Silueta Águila perdicera" class="bird-item__silueta">
+                    </article>
+                </a>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>2024 - Identificación de rapaces en vuelo</p>
+        <!-- Licencia creative commons -->
+        <p xmlns:cc="http://creativecommons.org/ns#">
+            This work is licensed under 
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" 
+               target="_blank" 
+               rel="license noopener noreferrer" 
+               class="footer__link">
+               CC BY-NC 4.0
+               <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" 
+                    alt="CC logo" 
+                    class="footer__icon">
+               <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" 
+                    alt="BY logo" 
+                    class="footer__icon">
+               <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" 
+                    alt="NC logo" 
+                    class="footer__icon">
+            </a>
+        </p>
+        <!-- sección con enlaces a páginas desde donde se han descargado imágenes -->
+        <p>Images by <a href="https://www.vecteezy.com" target="_blank" class="footer__link">Vecteezy.com</a> y <a href="https://www.seo.org" target="_blank" class="footer__link">SEO</a> </p>
+    </footer>
+</body>
+</html>

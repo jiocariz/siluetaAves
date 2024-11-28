@@ -1,0 +1,127 @@
+<!-- 
+  LMSGI - Tarea Evaluativa 02 
+  Jose Ignacio Ocáriz Saenz de Viteri - 24/11/2024
+  Formulario de contacto para que la gente envíe sus imágenes y datos de avistamiento
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web para aprender sobre identificación de rapaces en vuelo">
+    <meta name="keywords" content="rapaces, birding, silueta, prismáticos">
+    <title>Identificación de Rapaces en Vuelo</title>
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <!-- Header principal -->
+    <header class="header">
+            <!-- Icono de la página -->
+            <img src="img/siluetas_transparentes.gif" alt="Logo rapaces en vuelo" class="header__icon">
+        <h1 class="header__title">Identificación de rapaces en vuelo</h1>
+    </header>
+
+    <!-- Breadcrumb de navegación -->
+    <nav class="nav nav--breadcrumb">
+        <ol class="nav__list">
+            <li class="nav__item"><a href="index.html">Inicio</a></li>
+            <li class="nav__item"><a href="#">> Contacto</a></li>
+        </ol>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main">
+        <!-- Aside con la barra lateral para poder ir a cualquier sección, podría haber usado otro nav-->
+        <aside class="main__aside">
+            <!-- Ir a Home -->
+            <article class="main__aside-item">
+                <a href="index.html" class="main__aside-link" title="Ir a Inicio">
+                    <img src="img/nav_home_transparente.gif" alt="Icono Home" class="main__aside-icon">
+                    <span class="main__aside-text">Home</span>
+                </a>
+            </article>
+            <!-- Ir a Noticias -->
+            <article class="main__aside-item">
+                <a href="noticias.html" class="main__aside-link" title="Ir a Noticias">
+                    <img src="img/nav_news_transparente.gif" alt="Icono Noticias" class="main__aside-icon">
+                    <span class="main__aside-text">Noticias</span>
+                </a>
+            </article>
+            <!-- Ir a la lista de aves -->
+            <article class="main__aside-item">
+                <a href="lista-aves.html" class="main__aside-link" title="Ir a Lista de Aves">
+                    <img src="img/nav_aves_transparente.gif" alt="Icono Lista Aves" class="main__aside-icon">
+                    <span class="main__aside-text">Lista Aves</span>
+                </a>
+            </article>
+            <!-- Ir al formulario de contacto -->
+            <article class="main__aside-item">
+                <a href="formulario.html" class="main__aside-link" title="Ir a Contacto">
+                    <img src="img/nav_contact_transparente.gif" alt="Icono Contacto" class="main__aside-icon">
+                    <span class="main__aside-text">Contacto</span>
+                </a>
+            </article>
+        </aside>
+            
+        <!-- Sección principal con los campos del formulario de contacto -->
+        <section class="main__content">
+            <h2>Contacto</h2>
+            <form action="mailto:jocariz@birt.eus" method="POST">
+                <fieldset class="form__fieldset">
+                    <legend>Formulario de contacto</legend>
+                    <!-- Nombre del avistante y atributo required -->
+                    <article class="form__group">
+                        <label for="name">Nombre y apellidos:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </article>
+                    <!-- Email del avistante y atributo required -->
+                    <article class="form__group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </article>
+                    <!-- Fecha de avistamiento con input - date y atributo required -->
+                    <article class="form__group">
+                        <label for="date">Fecha del avistamiento:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </article>
+                    <!-- Para introducir coordenadas, con un placeholder que muestra ejemplo  -->
+                    <article class="form__group">
+                        <label for="coordinates">Coordenadas del avistamiento:</label>
+                        <input type="text" id="coordenadas" name="coordenadas" placeholder="Ej: 42.1234, -3.5678">
+                    </article>
+                    <!-- Botón para enviar el formulario -->
+                    <button type="submit" class="form__button">Enviar</button>
+                </fieldset>
+            </form>
+        </section>  
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>2024 - Identificación de rapaces en vuelo</p>
+        <!-- Licencia creative commons -->
+        <p xmlns:cc="http://creativecommons.org/ns#">
+            This work is licensed under 
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" 
+               target="_blank" 
+               rel="license noopener noreferrer" 
+               class="footer__link">
+               CC BY-NC 4.0
+               <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" 
+                    alt="CC logo" 
+                    class="footer__icon">
+               <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" 
+                    alt="BY logo" 
+                    class="footer__icon">
+               <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" 
+                    alt="NC logo" 
+                    class="footer__icon">
+            </a>
+        </p>
+        <!-- sección con enlaces a páginas desde donde se han descargado imágenes -->
+        <p>Images by <a href="https://www.vecteezy.com" target="_blank" class="footer__link">Vecteezy.com</a> y <a href="https://www.seo.org" target="_blank" class="footer__link">SEO</a> </p>
+    </footer>
+</body>
+</html>
