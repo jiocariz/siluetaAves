@@ -273,6 +273,7 @@ de pantalla para ir en flex-direction: column o row ...
     gap: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 0rem, 1rem;
 }
 /* Botones para cerrar la ventana modal (realmente no recogen cookies) */
 .cookie__boton {
