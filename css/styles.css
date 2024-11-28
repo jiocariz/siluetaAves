@@ -499,13 +499,12 @@ e) NOTICIAS
     flex-wrap: wrap; /* Permite que las noticias hagan wrap */
     gap: 1rem; /* Espacio entre noticias */
     justify-content: center; /* Centra las noticias horizontalmente */
-    padding: 1rem;
 }
 
 /* Cada noticia */
 .news__item {
     position: relative; /* Para luego poder usar absolute */
-    flex: 1 1 calc(33.33% - 1rem); /* Ocupa un tercio del ancho disponible menos el gap */
+    flex: 1 1 calc(100% - 1rem); /* Por defecto, cada noticia ocupa el ancho completo menos el gap */
     max-width: 400px; /* Ancho máximo para cada noticia */
     background-color: #fff;
     border: 1px solid #ddd;
@@ -514,6 +513,8 @@ e) NOTICIAS
     overflow: hidden; /* Para que el contenido no sobresalga */
     padding: 1rem;
 }
+
+
 
 /* Icono de la red social */
 .news__icon {
@@ -524,6 +525,7 @@ e) NOTICIAS
     height: 40px;
     z-index: 10; /* transparencia para  que esté por encima del texto */
 }
+
 
 /* Texto de la noticia */
 .news__item p {
